@@ -105,7 +105,7 @@
                 
                 <div class="info-section">
                     <h2>Student Information</h2>
-                    <p><strong>Name:</strong>Ahmed Aziz</p>
+                    <p><strong>Name:</strong>Will Grant</p>
                     <p><srong>ID:</srong>12345</p>
                     <p><strong>Grade:</strong>35A</p>
                 </div>
