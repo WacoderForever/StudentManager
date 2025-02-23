@@ -1,5 +1,5 @@
 
-package com.studentmanager.studentmanager.servlets;
+package com.studentmanager.servlets;
 
 import java.io.IOException;
 import jakarta.servlet.ServletException;
@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
-import com.studentmanager.dao.UserDAO;
+import com.studentmanager.services.LoginService;
 /**
  *
  * @author s1gm9
@@ -33,13 +33,5 @@ public class loginServlet extends HttpServlet {
             request.setAttribute("errorMessage","Invalid instructor Id or password");
         }
         request.getRequestDispatcher("login.jsp").forward(request, response);
-    }
-    
-    private static class LoginService {
-        public boolean validateuser(String instructorID, String password)
-            {
-                UserDAO userDAO = new UserDAO();
-                return userDAO.checkCredentials(instructorID, password);
-            }
     }
 }
