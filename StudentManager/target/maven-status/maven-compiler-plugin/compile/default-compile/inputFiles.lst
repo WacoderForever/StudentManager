@@ -1,2 +1,6 @@
-/home/s1gm9/NetBeansProjects/StudentManager/src/main/java/com/mycompany/studentmanager/JakartaRestConfiguration.java
-/home/s1gm9/NetBeansProjects/StudentManager/src/main/java/com/mycompany/studentmanager/resources/JakartaEE10Resource.java
+/home/wacoderforever/Documents/TheDeveloper/StudentManager/src/main/java/com/studentmanager/studentmanager/dao/DatabaseConnection.java
+/home/wacoderforever/Documents/TheDeveloper/StudentManager/src/main/java/com/mycompany/studentmanager/resources/JakartaEE10Resource.java
+/home/wacoderforever/Documents/TheDeveloper/StudentManager/src/main/java/com/studentmanager/studentmanager/JakartaRestConfiguration.java
+/home/wacoderforever/Documents/TheDeveloper/StudentManager/src/main/java/com/studentmanager/studentmanager/resources/JakartaEE10Resource.java
+/home/wacoderforever/Documents/TheDeveloper/StudentManager/src/main/java/com/studentmanager/studentmanager/dao/UserDAO.java
+/home/wacoderforever/Documents/TheDeveloper/StudentManager/src/main/java/com/mycompany/studentmanager/JakartaRestConfiguration.java
