@@ -21,7 +21,7 @@ public class loginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String instructorID = request.getParameter("instructor-id");
-        String password=request.getParameter("password");
+        String password = request.getParameter("password");
         LoginService loginService= new LoginService();
         boolean isvaliduser = loginService.validateuser(instructorID,password);
         if(isvaliduser){

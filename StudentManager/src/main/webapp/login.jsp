@@ -89,11 +89,11 @@
         <form action="login" method="post">
             <div class="form-group">
                 <label for="instructor-id">Instructor ID</label>
-                <input type="text" id="instructor-id" placeholder="Enter your instructor ID" required>
+                <input type="text" name="instructor-id" placeholder="Enter your instructor ID" required>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password" required>
+                <input type="password" name="password" placeholder="Enter your password" required>
             </div>
             <button type="submit" class="login-button">Login</button>
             <a href="#" class="forgot-password">Forgot Password?</a>
