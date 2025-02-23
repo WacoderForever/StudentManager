@@ -1,2 +1,6 @@
+com/studentmanager/studentmanager/services.class
+com/studentmanager/dao/UserDAO.class
+com/studentmanager/database/DatabaseConnection.class
+com/studentmanager/studentmanager/servlets/loginServlet$LoginService.class
 com/mycompany/studentmanager/resources/JakartaEE10Resource.class
 com/mycompany/studentmanager/JakartaRestConfiguration.class
