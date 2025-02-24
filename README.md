@@ -30,5 +30,4 @@ StudentManager/
 │── README.md                   # Project documentation
 ```
 
-This structure ensures a well-organized Student Manager application, keeping all relevant files in their appropriate directories.
 
