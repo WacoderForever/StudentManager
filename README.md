@@ -13,9 +13,10 @@ StudentManager/
 │   │   ├── js/
 │   │   ├── beans.xml
 │   │   ├── web.xml
-│   ├── attendance.jsp
-│   ├── dashboard.jsp
-│   ├── registration.jsp
+|   |   |─── jsp/ 
+│   |       ├── attendance.jsp
+│   |       ├── dashboard.jsp
+│   |       ├── registration.jsp
 │
 ├── Source Packages/
 │   ├── com.studentmanager.dao/
@@ -44,7 +45,7 @@ StudentManager/
 This project follows a structured Maven-based Java EE (Jakarta EE) architecture, ensuring clear separation of concerns. Below is an in-depth description of each folder and file, explaining its purpose and placement.
 
 ### Top-Level Directories
-#### 1. StudentManager-1.0-SNAPSHOT/
+####  StudentManager-1.0-SNAPSHOT/
 
 This is the root folder of the project. The name suggests it is a Maven project with a version (1.0-SNAPSHOT indicates an unstable/development version).
 It contains all source files, configuration files, dependencies, and web-related files.
@@ -59,9 +60,11 @@ It contains all source files, configuration files, dependencies, and web-related
 │ │ ├── js/ 
 │ │ ├── beans.xml 
 │ │ ├── web.xml 
-│ ├── attendance.jsp 
-│ ├── dashboard.jsp 
-│ ├── registration.jsp 
+|   |─── jsp/ 
+          ├── attendance.jsp
+          ├── dashboard.jsp 
+          ├── registration.jsp
+
 ```
 
 ###### WEB-INF/
@@ -82,12 +85,6 @@ Contents of WEB-INF/:
 - dashboard.jsp → The main dashboard for users/admins.
 - registration.jsp → Student registration page.
 
-#### 2. Source Packages (Backend Code - Java Classes)
-```
-├── Source Packages/ 
-│ ├── com.studentmanager.dao/ 
-│
-```
 ##### 2. Source Packages (Backend Code - Java Classes, Business Logic, and Utilities)
 This directory contains all Java classes for database operations, business logic, servlets, filters, and additional features.
 ```
