@@ -1,69 +1,6 @@
 # TheDeveloper
 
 ## Student Manager
-
-### Project Structure
-
-The project follows the structure below:
-
-```
-StudentManager/
-│── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── com.studentmanager/
-│   │   │   │   ├── servlets/   # All servlets go here
-│   │   │   │   ├── dao/        # Database access code
-│   │   │   │   ├── models/     # Java classes for entities
-│   │   │   │   ├── utils/      # Database connection
-│   │   ├── webapp/
-│   │   │   ├── WEB-INF/
-│   │   │   │   ├── web.xml     # Servlet configuration
-│   │   │   ├── jsp/            # All JSP pages
-│   │   │   │   ├── index.jsp
-│   │   │   │   ├── login.jsp
-│   │   │   │   ├── dashboard.jsp
-│   │   │   ├── css/            # Styles
-│   │   │   ├── js/             # Scripts
-│   ├── pom.xml                 # For Maven (optional)
-│── lib/                        # JAR files like MySQL Connector
-│── README.md                   # Project documentation
-```
-### Defining Core Features
-The  web app will have these modules:
-
- #### Instructor Management
-
- - Register/Login
-
- - Update Profile
-
- - View Student Details
-
-#### Student Management
-
- - Add/Edit/Delete Students
-
- - View Attendance
-
- - View Results
-
- - Attendance System
-
- - Mark Attendance
-
- - Generate Reports
-
-#### Result Management
-
- - Upload/View Results
-
-#### Settings
-
- - Change Password
-
-
-
 ## Project View
 
 ```
@@ -115,7 +52,16 @@ It contains all source files, configuration files, dependencies, and web-related
 ##### 1. Web Pages (Frontend + Configurations)
 
 ```
-├── Web Pages/ │ ├── WEB-INF/ │ │ ├── lib/ │ │ ├── css/ │ │ ├── js/ │ │ ├── beans.xml │ │ ├── web.xml │ ├── attendance.jsp │ ├── dashboard.jsp │ ├── registration.jsp 
+├── Web Pages/ 
+│ ├── WEB-INF/ 
+│ │ ├── lib/ 
+│ │ ├── css/ 
+│ │ ├── js/ 
+│ │ ├── beans.xml 
+│ │ ├── web.xml 
+│ ├── attendance.jsp 
+│ ├── dashboard.jsp 
+│ ├── registration.jsp 
 ```
 
 ###### WEB-INF/
@@ -138,12 +84,20 @@ Contents of WEB-INF/:
 
 #### 2. Source Packages (Backend Code - Java Classes)
 ```
-├── Source Packages/ │ ├── com.studentmanager.dao/ │
+├── Source Packages/ 
+│ ├── com.studentmanager.dao/ 
+│
 ```
 ##### 2. Source Packages (Backend Code - Java Classes, Business Logic, and Utilities)
 This directory contains all Java classes for database operations, business logic, servlets, filters, and additional features.
 ```
-├── Source Packages/ │ ├── com.studentmanager.dao/ │ ├── com.studentmanager.database/ │ ├── com.studentmanager.services/ │ ├── com.studentmanager.servlets/ │ ├── com.studentmanager.filters/ │ ├── com.studentmanager.features/ 
+├── Source Packages/ 
+│ ├── com.studentmanager.dao/ 
+│ ├── com.studentmanager.database/ 
+│ ├── com.studentmanager.services/ 
+│ ├── com.studentmanager.servlets/ 
+│ ├── com.studentmanager.filters/ 
+│ ├── com.studentmanager.features/ 
 com.studentmanager.dao/ (Data Access Objects - DAO Layer)
 ```
 Why it exists: 
@@ -213,7 +167,8 @@ Separates core features from extra modules, improving maintainability.
 
 #### 3. Dependencies (Libraries and External Packages)
 ```
-├── Dependencies/ │ ├── JDK 17 (Default) 
+├── Dependencies/ 
+│ ├── JDK 17 (Default) 
 ```
 
 Why it exists: 
@@ -225,7 +180,9 @@ Ensures proper dependency management for smooth execution.
 
 #### 4. Project Files (Maven Build & IDE Configurations)
 ```
-├── Project Files/ │ ├── pom.xml │ ├── nb-configuration.xml 
+├── Project Files/ 
+│ ├── pom.xml 
+│ ├── nb-configuration.xml 
 ```
 
 Why it exists: 
@@ -250,3 +207,39 @@ These files belong to the root of the project because they define global setting
  -Modular Feature Development (features/) → Keeps extra functionalities isolated.
 
 This structure ensures clean, scalable, and maintainable development
+### Defining Core Features
+The  web app will have these modules:
+
+ #### Instructor Management
+
+ - Register/Login
+
+ - Update Profile
+
+ - View Student Details
+
+#### Student Management
+
+ - Add/Edit/Delete Students
+
+ - View Attendance
+
+ - View Results
+
+ - Attendance System
+
+ - Mark Attendance
+
+ - Generate Reports
+
+#### Result Management
+
+ - Upload/View Results
+
+#### Settings
+
+ - Change Password
+
+
+
+
