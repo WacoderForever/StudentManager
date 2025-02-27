@@ -7,7 +7,6 @@ import java.sql.SQLException;
 public class DBConnection {
     static {
         try {
-            // Explicitly register the MariaDB driver
             Class.forName("org.mariadb.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException("Failed to load MariaDB driver", e);
