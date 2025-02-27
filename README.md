@@ -1,5 +1,5 @@
 ## Project View
-'''
+```
 StudentManager/
 ├── pom.xml
 ├── src
@@ -66,4 +66,4 @@ StudentManager/
     │       │   └── mariadb-java-client-3.5.2.jar
     │       └── web.xml
     └── test-classes
-'''
+```
