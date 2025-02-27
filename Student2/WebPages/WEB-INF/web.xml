@@ -1,0 +1,9 @@
+<servlet>
+    <servlet-name>DBTestServlet</servlet-name>
+    <servlet-class>com.studentmanager.servlets.DBTestServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DBTestServlet</servlet-name>
+    <url-pattern>/testdb</url-pattern>
+</servlet-mapping>
