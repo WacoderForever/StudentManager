@@ -122,3 +122,32 @@ CREATE TABLE Attendance (
 );
 
 ```
+
+## Triggers for the automatic addition of users
+```
+DELIMITER $$
+
+CREATE TRIGGER after_student_insert
+AFTER INSERT ON Students
+FOR EACH ROW
+BEGIN
+    DECLARE username VARCHAR(100);
+    SET username = CONCAT(NEW.first_name, NEW.last_name);
+
+    INSERT INTO Users (user_id, username, password, role)
+    VALUES (NEW.student_id, username, 'default_password', 'Student');
+END$$
+
+CREATE TRIGGER after_instructor_insert
+AFTER INSERT ON Instructors
+FOR EACH ROW
+BEGIN
+    DECLARE username VARCHAR(100);
+    SET username = CONCAT(NEW.first_name, NEW.last_name);
+
+    INSERT INTO Users (user_id, username, password, role)
+    VALUES (NEW.instructor_id, username, 'default_password', 'Instructor');
+END$$
+
+DELIMITER ;
+```
